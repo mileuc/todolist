@@ -57,13 +57,13 @@ form.item {
 }
 
 button {
-  min-height: 50px;
-  width: 50px;
+  min-height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
   border-color: transparent;
   background-color: #545859;
   color: #fff;
-  font-size: 30px;
+  font-size: 1.875rem;
   padding-bottom: 6px;
   border-width: 0;
   transition-duration: 0.2s;
@@ -100,7 +100,7 @@ form.search {
 
 .search-input {
   text-align: center;
-  height: 30px !important ;
+  height: 1.875rem !important ;
   top: 10px;
   border: none;
   background: transparent;
@@ -112,15 +112,17 @@ form.search {
 }
 
 .search-submit {
-  width: 25px;
+  min-height: 1.875rem;
+  width: 1.5625rem;
   border-radius: 0%;
   border-color: transparent;
   background-color: #545859;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding-bottom: 6px;
   border-width: 0;
   transition-duration: 0.2s;
+  text-align: center;
 }
 
 ::placeholder {
