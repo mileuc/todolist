@@ -106,13 +106,12 @@ form.search {
   background: transparent;
   font-size: 100% !important;
   font-weight: 200;
-  width: 90% !important;
+  width: 80% !important;
   color: white;
   background-color:#545859;
 }
 
 .search-submit {
-  min-height: 25px;
   width: 25px;
   border-radius: 0%;
   border-color: transparent;
