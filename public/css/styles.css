@@ -87,7 +87,7 @@ input[type="text"] {
   background: transparent;
   font-size: 1.25rem;
   font-weight: 200;
-  width: 19.5625rem;
+  width: 18rem;
 }
 
 input[type="text"]:focus {
