@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //create todolistDB
-mongoose.connect("mongodb+srv://admin-michael:test123@cluster0.u4fpw.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 //mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 // set up schema for item documents in items collection
@@ -24,7 +25,7 @@ const itemsSchema = new mongoose.Schema({
     name: String
 });
 
-// create default page items collection
+// create items collection that the default page will use
 const Item = mongoose.model("Item", itemsSchema);
 
 // set up default list items
